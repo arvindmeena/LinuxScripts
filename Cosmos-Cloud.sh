@@ -75,7 +75,7 @@ sh get-docker.sh &>/dev/null
 rm get-docker.sh
 systemctl enable docker &>/dev/null
 systemctl start docker &>/dev/null
-docker pull ghcr.io/azukaar/cosmos-server:latest &>/dev/null
+docker pull azukaar/cosmos-server &>/dev/null
 docker run -d --name cosmos-cloud \
   -p 80:80 \
   -v /var/run/docker.sock:/var/run/docker.sock \
